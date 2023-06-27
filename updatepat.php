@@ -14,7 +14,7 @@
 
     $result = $conn->query($sql);
     $conn->close();
-    header("location: index.php");
+    header("location: index.php"); 
 
 ?>
 

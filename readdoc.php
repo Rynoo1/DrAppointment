@@ -13,8 +13,9 @@
 
             echo '<form class="form-inline m-2" action="updatedoc.php" method="POST">';
 
-            echo '<td><input type="text" class="form-control" name="Name" value="' . $row['Name'] . '"></td>';
-            echo '<td><input type="text" class="form-control" name="Surname" value="' . $row['Surname'] . '"></td>';
+            echo '<td><input type="file" class="form-control" name="Image" id="image" accept=".jpg, .jpeg, .png"></td>';
+            echo '<td><input type="text" class="form-control" name="Name" value="' . $row['DName'] . '"></td>';
+            echo '<td><input type="text" class="form-control" name="Surname" value="' . $row['DSurname'] . '"></td>';
             echo '<td><input type="text" class="form-control" name="Specialisation" value="' . $row['Specialisation'] . '"></td>';
             echo '<td><input type="number" class="form-control" name="RoomNr" value="' . $row['RoomNr'] . '"></td>';
             echo '<td><input type="number" class="form-control" name="Phone" value="' . $row['PhoneNr'] . '"></td>';
@@ -26,6 +27,7 @@
             echo '</form>';
 
         } else {
+            echo "<td> <img src=' img/" . $row['Image'] . "' style='height: 150px; width: 150px;'> </td>";
             echo "<td>" . $row['DName'] . "</td>";
             echo "<td>" . $row['DSurname'] . "</td>";
             echo "<td>" . $row['Specialisation'] . "</td>";

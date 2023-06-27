@@ -13,6 +13,7 @@
 
             echo '<form class="form-inline m-2" action="update.php" method="POST">';
 
+            echo '<td><input type="file" class="form-control" name="Image" id="image" accept=".jpg, .jpeg, .png"></td>';
             echo '<td><input type="text" class="form-control" id="Name" name="Name"  value="' . $row['Name'] . '"></td>';
             echo '<td><input type="text" class="form-control" id="Surname" name="Surname"  value="' . $row['Surname'] . '"></td>';
             echo '<td><input type="number" class="form-control" id="Rank" name="Rank"  value="' . $row['Rank'] . '"></td>';
@@ -23,6 +24,7 @@
             echo '</form>';
 
         } else {
+            echo "<td> <img src=' img/" . $row['Image'] . "' style='height: 150px; width: 150px;'> </td>";
             echo "<td>" . $row['Name'] . "</td>";
             echo "<td>" . $row['Surname'] . "</td>";
             echo "<td>" . $row['Rank'] . "</td>";

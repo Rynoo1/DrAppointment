@@ -4,7 +4,7 @@
 
     if (isset($_POST['names']) && isset($_POST['mail']) && isset($_POST['pass'])) {
         function validate($data)
-        {
+        { 
             $data = trim($data);
             $data = stripslashes($data);
             $data = htmlspecialchars($data);

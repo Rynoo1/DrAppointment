@@ -16,12 +16,12 @@ session_start();
 
 <body>
 
-    <div class="container-fluid bg-dark" style="height: 100vh;">
+    <div class="container-fluid bg-primary">
         <header>
             <div class="row flex-nonwrap justiy-content-between align-items-center bg-dark py-2 px-3">
                 <div class="col-4">
                     <h2 class="text-white"><a class="link-info link-underline link-underline-opacity-0"
-                            href="index.php"> Name </a></h2>
+                            href="index.php"> The Office Doctor </a></h2>
                 </div>
 
                 <div class="col-2 text-center">
@@ -35,14 +35,14 @@ session_start();
                 </div>
 
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-outline-primary">Log Out</button>
+                    <button class="btn btn-outline-primary"><a class="link-underline link-underline-opacity-0 text-white" href="login.php"> Log Out </a> </button>
                 </div>
             </div>
         </header>
         <!-- nav bar -->
 
-        <div col>
-            <table class="table table-borderless table-dark table-hover">
+        <div col class="mt-3">
+            <table class="table table-borderless table-light table-hover">
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -52,6 +52,8 @@ session_start();
                         <th>Phone</th>
                         <th>Email</th>
                         <th>ID</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <?php 
@@ -60,9 +62,8 @@ session_start();
             </table>
         </div>
 
-        <div class="row bg-dark pb-5">
-
-            <div class="accordion accordion-flush" id="patientaccordion">
+        <div class="row pb-3">
+            <div class="accordion" id="patientaccordion">
                 <div class="accordion-item">
                     <h1 class="accordion-header"><button class="accordion-button collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
@@ -76,13 +77,13 @@ session_start();
                             <form action="insertPat.php" method="POST">
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="PatName" class="form-label">Name</label>
+                                        <label for="PatName" class="form-label ms-1">Name</label>
                                         <input type="text" class="form-control" name="newName" placeholder="Name" required>
                                     </div>
                                     <!-- name input -->
 
                                     <div class="col-auto  mb-3 me-auto">
-                                        <label for="PatSur" class="form-label">Surname</label>
+                                        <label for="PatSur" class="form-label ms-1">Surname</label>
                                         <input type="text" class="form-control" name="newSurname" placeholder="Surname" required>
                                     </div>
                                     <!-- surname input -->
@@ -91,13 +92,13 @@ session_start();
 
                                 <div class="row">
                                     <div class="col-1 mb-3 ms-auto">
-                                        <label for="PatAge" class="form-label">Age</label>
+                                        <label for="PatAge" class="form-label ms-1">Age</label>
                                         <input type="number" class="form-control" name="newAge" placeholder="Age" required>
                                     </div>
                                     <!-- age in -->
 
                                     <div class="col-1 mb-3 me-auto">
-                                        <label for="PatGend" class="form-label"> Gender</label>
+                                        <label for="PatGend" class="form-label ms-1"> Gender</label>
                                         <input type="text" class="form-control" name="newGend" placeholder="M/F/N" required>
                                     </div>
                                     <!-- gend in -->
@@ -106,13 +107,13 @@ session_start();
 
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="PatPhone" class="form-label">Phone</label>
+                                        <label for="PatPhone" class="form-label ms-1">Phone</label>
                                         <input type="text" class="form-control" name="newPhone" placeholder="0123456789" required>
                                     </div>
                                     <!-- phone in -->
 
                                     <div class="col-auto mb-3 me-auto">
-                                        <label for="PatMail" class="form-label">Email</label>
+                                        <label for="PatMail" class="form-label ms-1">Email</label>
                                         <input type="email" class="form-control" name="newEmail" placeholder="example@mail.com" required>
                                     </div>
                                     <!-- email in -->
@@ -121,13 +122,13 @@ session_start();
 
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="PatPass" class="form-label">Password</label>
+                                        <label for="PatPass" class="form-label ms-1">Password</label>
                                         <input type="text" class="form-control" name="newPass" placeholder="Password" required>
                                     </div>
                                     <!-- password in -->
 
                                     <div class="col-auto mb-3 me-auto">
-                                        <label for="PatPass" class="form-label">Confirm Password</label>
+                                        <label for="PatPass" class="form-label ms-1">Confirm Password</label>
                                         <input type="Password" class="form-control" placeholder="Password" required>
                                     </div>
                                     <!-- password confirm -->
@@ -135,19 +136,12 @@ session_start();
                                 <!-- two inputs -->
 
                                 <div class="row">
-                                    <div class="col-auto mb-3 ms-auto">
-                                        <label for="PatID" class="form-label">PatientID</label>
-                                        <input type="number" class="form-control" placeholder="PatienID" required>
-                                    </div>
-                                    <!-- patient id in -->
-
-                                    <div class="col-auto mb-3 me-auto">
-                                        <label for="PatMed" class="form-label">Medical Aid Number</label>
+                                    <div class="col-auto mb-3 me-auto ms-auto">
+                                        <label for="PatMed" class="form-label ms-1">Medical Aid Number</label>
                                         <input type="text" class="form-control" name="newMedicAid" placeholder="Medical Aid Number" required>
                                     </div>
-                                    <!-- patient medical aid nr in -->
                                 </div>
-                                <!-- two inputs -->
+                                <!-- one input -->
 
                                 <div class="row">
                                     <!-- <button class="col-auto btn btn-primary p-auto mx-auto">Submit</button> -->

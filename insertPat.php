@@ -2,7 +2,6 @@
 
     include 'db.php';
 
-    $PatientID = $_POST['newPatientID'];
     $Name = $_POST['newName'];
     $Surname = $_POST['newSurname'];
     $Age = $_POST['newAge'];

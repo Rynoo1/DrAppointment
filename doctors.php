@@ -13,12 +13,12 @@
 
 <body>
 
-    <div class="container-fluid bg-dark" style="height: 100vh;">
+    <div class="container-fluid bg-primary">
         <header>
             <div class="row flex-nonwrap justiy-content-between align-items-center bg-dark py-2 px-3">
                 <div class="col-4">
                     <h2 class="text-white"><a class="link-info link-underline link-underline-opacity-0"
-                            href="index.php"> Name </a></h2>
+                            href="index.php"> The Office Doctor </a></h2>
                 </div>
 
                 <div class="col-2 text-center">
@@ -32,16 +32,17 @@
                 </div>
 
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-outline-primary">Log Out</button>
+                    <button class="btn btn-outline-primary"><a class="link-underline link-underline-opacity-0 text-white" href="login.php"> Log Out </a> </button>
                 </div>
             </div>
         </header>
         <!-- Nav Bar -->
 
-        <div col>
-            <table class="table table-borderless table-dark table-hover">
+        <div col class="mt-3">
+            <table class="table table-borderless table-light table-hover">
                 <thead>
                     <tr>
+                        <th>Image</th>
                         <th>Name</th>
                         <th>Surname</th>
                         <th>Speci</th>
@@ -49,6 +50,8 @@
                         <th>Phone</th>
                         <th>Email</th>
                         <th>ID</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <?php
@@ -58,7 +61,7 @@
         </div>
 
 
-        <div class="row bg-dark pb-5">
+        <div class="row pb-4">
             <div class="accordion" id="docaccordion">
                 <div class="accordion-item">
                     <h1 class="accordion-header"><button class="accordion-button collapsed" type="button"
@@ -73,13 +76,13 @@
                             <form action="insertdoc.php" method="post">
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="DocName" class="form-label">Name</label>
+                                        <label for="DocName" class="form-label ms-1">Name</label>
                                         <input type="text" class="form-control" name="newDName" placeholder="Name" required>
                                     </div>
                                     <!-- name input -->
 
                                     <div class="col-auto  mb-3 me-auto">
-                                        <label for="DocSur" class="form-label">Surname</label>
+                                        <label for="DocSur" class="form-label ms-1">Surname</label>
                                         <input type="text" class="form-control" name="newDSurname" placeholder="Surname" required>
                                     </div>
                                     <!-- surname input -->
@@ -88,13 +91,13 @@
 
                                 <div class="row">
                                     <div class="col-1 mb-3 ms-auto">
-                                        <label for="DocAge" class="form-label">Age</label>
+                                        <label for="DocAge" class="form-label ms-1">Age</label>
                                         <input type="number" class="form-control" name="newDAge" placeholder="Age" required>
                                     </div>
                                     <!-- age in -->
 
                                     <div class="col-1 mb-3 me-auto">
-                                        <label for="DocGend" class="form-label"> Gender</label>
+                                        <label for="DocGend" class="form-label ms-1"> Gender</label>
                                         <input type="text" class="form-control" name="newDGender" placeholder="M/F/N" required>
                                     </div>
                                     <!-- gend in -->
@@ -103,13 +106,13 @@
 
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="DocPhone" class="form-label">Phone</label>
+                                        <label for="DocPhone" class="form-label ms-1">Phone</label>
                                         <input type="text" class="form-control" name="newDPhone" placeholder="0123456789" required>
                                     </div>
                                     <!-- phone in -->
 
                                     <div class="col-auto mb-3 me-auto">
-                                        <label for="DocMail" class="form-label">Email</label>
+                                        <label for="DocMail" class="form-label ms-1">Email</label>
                                         <input type="email" class="form-control" name="newDEmail" placeholder="example@mail.com" required>
                                     </div>
                                     <!-- email in -->
@@ -118,13 +121,13 @@
 
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="DocPass" class="form-label">Password</label>
+                                        <label for="DocPass" class="form-label ms-1">Password</label>
                                         <input type="text" class="form-control" placeholder="Password" required>
                                     </div>
                                     <!-- password in -->
 
                                     <div class="col-auto mb-3 me-auto">
-                                        <label for="DocPass" class="form-label">Confirm Password</label>
+                                        <label for="DocPass" class="form-label ms-1">Confirm Password</label>
                                         <input type="Password" class="form-control" name="newDPass" placeholder="Password" required>
                                     </div>
                                     <!-- password confirm -->
@@ -133,13 +136,13 @@
 
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
-                                        <label for="DocRoom" class="form-label">Room Number</label>
+                                        <label for="DocRoom" class="form-label ms-1">Room Number</label>
                                         <input type="number" class="form-control" name="newRoomNr" placeholder="Room Number" required>
                                     </div>
                                     <!-- doctor room number in -->
 
                                     <div class="col-auto mb-3 me-auto">
-                                        <label for="DocSpec" class="form-label">Specialisation</label>
+                                        <label for="DocSpec" class="form-label ms-1">Specialisation</label>
                                         <input type="text" class="form-control" name="newSpecialisation" placeholder="Specialisation" required>
                                     </div>
                                     <!-- doctor specialisation in -->

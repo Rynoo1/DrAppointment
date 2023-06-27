@@ -14,7 +14,7 @@ $_SESSION['Rank'] = 1;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <title>Project Index</title>
+    <title>The Office Doctor</title>
 </head>
 
 <body>
@@ -24,7 +24,8 @@ $_SESSION['Rank'] = 1;
             <div class="row flex-nonwrap justiy-content-between align-items-center bg-dark py-2 px-3">
                 <div class="col-4">
                     <h2 class="text-white"><a class="link-light link-underline link-underline-opacity-0"
-                            href="index.php"> Name </a></h2>
+                            href="index.php"> The Office Doctor </a>
+                    </h2>
                 </div>
 
                 <div class="col-2 text-center">
@@ -38,18 +39,18 @@ $_SESSION['Rank'] = 1;
                 </div>
 
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-outline-primary">Log Out</button>
+                    <button class="btn btn-outline-primary"><a class="link-underline link-underline-opacity-0 text-white" href="login.php"> Log Out </a> </button>
                     <h1 class="text-white">
-                        <?php echo $_SESSION['Rank'] ?>
+                        <?php //echo $_SESSION['Rank'] ?>
                     </h1>
                 </div>
             </div>
         </header>
         <!-- nav bar -->
 
-        <div class="row bg-info h-100 px-2">
+        <div class="row bg-primary h-100 px-2">
 
-            <div class="col-6 bg-primary text-center px-0">
+            <div class="col-6 text-center px-0">
                 <h1 class="my-2">Upcoming Appointments</h1>
 
                 <div class='col-12 border border-0 rounded-3 my-4'>
@@ -63,8 +64,6 @@ $_SESSION['Rank'] = 1;
                             <?php
                             include 'readappt.php';
                             ?>
-                            <button class='btn btn-primary mx-1'>Update</button> 
-                            <button class='btn btn-danger'>Delete</button>
                         </div>
                         <!-- body -->
                     </div>
@@ -83,8 +82,6 @@ $_SESSION['Rank'] = 1;
                                 <?php
                                 include 'readapptwo.php';
                                 ?>
-                                <button class="btn btn-primary mx-1">Update</button>
-                                <button class="btn btn-danger">Delete</button>
                             </div>
                             <!-- body -->
                         </div>
@@ -99,10 +96,9 @@ $_SESSION['Rank'] = 1;
                             </div>
                             <!-- header -->
                             <div class="card-body">
-                                <h4>Date and Time</h4>
-                                <h4>Doctor</h4>
-                                <h4>Patient</h4>
-                                <h4>Room</h4>
+                                <?php
+                                include 'readappthree.php';
+                                ?>
                             </div>
                             <!-- body -->
                         </div>
@@ -121,24 +117,26 @@ $_SESSION['Rank'] = 1;
                     <div class="row">
                         <h2>This Month</h2>
                     </div>
-
-                    <div class="row bg-danger">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">This Week</h4>
-                                <p class="card-text">Appointments in the next week</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <table class="table rounded table-borderless table-hover table-light my-4">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Patient</th>
+                                <th>Dr</th>
+                                <th><th>
+                            </tr>
+                        </thead>
+                        <?php
+                        include 'readapptmnth.php';
+                        ?>
+                    </table>
 
                 </div>
             </div>
             <!-- calendar -->
 
-            <div class="bg-danger">
+            <div class="bg-light mt-1 rounded">
                 <h3 class="text-center mt-3">Create a New Appointment</h3>
 
                 <form class="row m-0" action="newappt.php" method="post">
@@ -180,30 +178,31 @@ $_SESSION['Rank'] = 1;
 
             <?php
             if ($_SESSION['Rank'] = 2) {
-            ?>
-            <div class="col-12 bg-dark text-center text-primary">
-                <h3 class="mt-3">Edit Receptionists</h3>
-                <table class="table table-borderless table-dark table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Surname</th>
-                            <th>Rank</th>
-                            <th>ID</th>
-                        </tr>
-                    </thead>
-                    <?php
-                    include 'read.php';
-                    ?>
-                </table>
-            </div>
-            <!-- edit Receptionists -->
+                ?>
+                <div class="col-12 bg-dark text-center text-primary my-3 rounded">
+                    <h3 class="mt-3">Edit Receptionists</h3>
+                    <table class="table table-borderless table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>Rank</th>
+                                <th>ID</th>
+                            </tr>
+                        </thead>
+                        <?php
+                        include 'read.php';
+                        ?>
+                    </table>
+                </div>
+                <!-- edit Receptionists -->
 
-            <?php
+                <?php
             } else {
                 ?>
                 <h1>Invalid</h1>
-            <?php
+                <?php
             }
             ?>
 
