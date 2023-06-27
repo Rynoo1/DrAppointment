@@ -139,7 +139,7 @@ $_SESSION['Rank'] = 1;
             </div>
             <!-- calendar -->
 
-            <div class="bg-light mt-1 rounded">
+            <div class="bg-light mt-1 rounded mb-3">
                 <h3 class="text-center mt-3">Create a New Appointment</h3>
 
                 <form class="row m-0" action="newappt.php" method="post">
@@ -180,7 +180,7 @@ $_SESSION['Rank'] = 1;
 
 
             <?php
-            if ($_SESSION['Rank'] = 2) {
+            if ($_SESSION['Rank'] === 2) {
                 ?>
                 <div class="col-12 bg-dark text-center text-primary my-3 rounded">
                     <h3 class="mt-3">Edit Receptionists</h3>
@@ -267,10 +267,6 @@ $_SESSION['Rank'] = 1;
                 </div>
                 <!-- new receptionist -->
                 
-                <?php
-            } else {
-                ?>
-                <h1>Invalid</h1>
                 <?php
             }
             ?>
