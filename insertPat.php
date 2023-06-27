@@ -9,15 +9,16 @@
     $Email = $_POST['newEmail'];
     $Gender = $_POST['newGend'];
     $Pass = $_POST['newPass'];
-    $MedicAid = $_POST['newMedicAid']; 
+    $MedicAid = $_POST['newMedicAid'];
+    $Image = $_POST['newImg'];
 
 
-    $sql = "INSERT INTO Patients (Name, Surname, Age, Gender, PhoneNr, Email, Password, MedicalAidNr) VALUES ('$Name', '$Surname', 
-    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$MedicAid' )";
+    $sql = "INSERT INTO Patients (Name, Surname, Age, Gender, PhoneNr, Email, Password, MedicalAidNr, Image) VALUES ('$Name', '$Surname', 
+    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$MedicAid', '$Image' )";
 
     $conn->query($sql);
 
     $conn->close();
-    header("location: Patients.php");
+    header("location: patients.php");
 
 ?>

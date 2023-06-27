@@ -10,10 +10,10 @@
     $Pass = $_POST['newDPass'];
     $Specialisation = $_POST['newSpecialisation']; 
     $RoomNr = $_POST['newRoomNr'];
+    $Image = $_POST['newPic'];
 
-
-    $sql = "INSERT INTO Doctors (DName, DSurname, Age, Gender, PhoneNr, Email, Password, Specialisation, RoomNr) VALUES ('$DName', '$DSurname', 
-    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$Specialisation', '$RoomNr' )";
+    $sql = "INSERT INTO Doctors (DName, DSurname, Age, Gender, PhoneNr, Email, Password, Specialisation, RoomNr, Image) VALUES ('$DName', '$DSurname', 
+    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$Specialisation', '$RoomNr', '$Image' )";
 
     $conn->query($sql);
 

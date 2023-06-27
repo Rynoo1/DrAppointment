@@ -137,7 +137,7 @@
                                 <div class="row">
                                     <div class="col-auto mb-3 ms-auto">
                                         <label for="DocRoom" class="form-label ms-1">Room Number</label>
-                                        <input type="number" class="form-control" name="newRoomNr" placeholder="Room Number" required>
+                                        <input type="text" class="form-control" name="newRoomNr" placeholder="Room Number" required>
                                     </div>
                                     <!-- doctor room number in -->
 
@@ -148,6 +148,13 @@
                                     <!-- doctor specialisation in -->
                                 </div>
                                 <!-- two inputs -->
+
+                                <div class="row">
+                                    <div class="col-auto mb-3 me-auto ms-auto">
+                                        <label for="DocPic" class="form-label ms-1">Image</label>
+                                        <input type="file" class="form-control" name="newPic" accept=".jpg, .jepg, .png" required>
+                                    </div>
+                                </div>
 
                                 <div class="row">
                                     <button type="submit" class="col-auto btn btn-primary p-auto mx-auto">Submit</button>

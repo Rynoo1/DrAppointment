@@ -39,7 +39,9 @@ $_SESSION['Rank'] = 1;
                 </div>
 
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-outline-primary"><a class="link-underline link-underline-opacity-0 text-white" href="login.php"> Log Out </a> </button>
+                    <button class="btn btn-outline-primary"><a
+                            class="link-underline link-underline-opacity-0 text-white" href="login.php"> Log Out </a>
+                    </button>
                     <h1 class="text-white">
                         <?php //echo $_SESSION['Rank'] ?>
                     </h1>
@@ -124,7 +126,8 @@ $_SESSION['Rank'] = 1;
                                 <th>Time</th>
                                 <th>Patient</th>
                                 <th>Dr</th>
-                                <th><th>
+                                <th>
+                                <th>
                             </tr>
                         </thead>
                         <?php
@@ -198,6 +201,72 @@ $_SESSION['Rank'] = 1;
                 </div>
                 <!-- edit Receptionists -->
 
+                <div class="bg-light mt-1 rounded mb-3 pb-2">
+                    <h3 class="text-center mt-3">Add a Receptionist</h3>
+
+                    <form class="row m-0" action="insertrecept.php" method="post">
+
+                        <div class="row">
+                            <div class="col-3 mx-auto mb-2">
+                                <label for="Name" class="form-label">Name</label>
+                                <input type="text" name="newname" class="form-control">
+                            </div>
+
+                            <div class="col-3 mx-auto mb-2">
+                                <label for="Surname" class="form-label">Surname</label>
+                                <input type="text" name="newsurname" class="form-control">
+                            </div>
+
+                            <div class="col-2 mb-2">
+                                <label for="Age" class="form-label">Age</label>
+                                <input type="text" name="newage" class="form-control">
+                            </div>
+
+                            <div class="col-2 mb-2">
+                                <label for="PatID" class="form-label">Gender</label>
+                                <input type="text" name="newgender" class="form-control">
+                            </div>
+
+                            <div class="col-2 mb-2">
+                                <label for="Email" class="form-label">Phone Nr</label>
+                                <input type="text" name="newphone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 mx-auto mb-2">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" name="newmail" class="form-control">
+                            </div>
+
+                            <div class="col-3 mx-auto mb-2">
+                                <label for="Password1" class="form-label">Password</label>
+                                <input type="text" name="firstpass" class="form-control">
+                            </div>
+
+                            <div class="col-3 mb-2">
+                                <label for="Password" class="form-label">Confirm Password</label>
+                                <input type="password" name="newpass" class="form-control">
+                            </div>
+
+                            <div class="col-1 mb-2">
+                                <label for="Rank" class="form-label">Rank</label>
+                                <input type="text" name="newrank" class="form-control">
+                            </div>
+
+                            <div class="col-2 mb-2">
+                                <label for="Image" class="form-label">Image</label>
+                                <input type="file" name="newImage" class="form-control" accept=".jpg, .jpeg, .png">
+                            </div>
+                        </div>
+
+                        <div class="col-auto mx-auto m-2">
+                            <button class="btn btn-primary p-auto">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- new receptionist -->
+                
                 <?php
             } else {
                 ?>

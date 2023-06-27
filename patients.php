@@ -136,9 +136,14 @@ session_start();
                                 <!-- two inputs -->
 
                                 <div class="row">
-                                    <div class="col-auto mb-3 me-auto ms-auto">
+                                    <div class="col-auto mb-3 ms-auto">
                                         <label for="PatMed" class="form-label ms-1">Medical Aid Number</label>
                                         <input type="text" class="form-control" name="newMedicAid" placeholder="Medical Aid Number" required>
+                                    </div>
+
+                                    <div class="col-auto mb-3 me-auto">
+                                        <label for="PatImg" class="form-label ms-1">Image</label>
+                                        <input type="file" class="form-control" name="newImg" accept=".jpg, .jpeg, .png" required>
                                     </div>
                                 </div>
                                 <!-- one input -->
