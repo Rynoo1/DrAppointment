@@ -44,10 +44,10 @@
 
             $sql = "SELECT * FROM Receptionists WHERE Name = $firstname AND Surname = '$surname' AND Email = '$mail' AND Password = '$pass'";
 
-            $result = mysqli_query($conn, $sql);
+            $results = $conn->query($sql);
 
-            if (mysqli_num_rows($result) === 1) {
-                $row = mysqli_fetch_assoc($result);
+            if (mysqli_num_rows($results) === 1) {
+                $row = mysqli_fetch_assoc($results);
                 if ($row['Name'] === $firstname && $row['Surname'] === $surname && $row['Email'] === $mail && $row['Password'] === $pass ) {
                     $_SESSION['Name'] = $row['Name'];
                     $_SESSION['Rank'] = $row['Rank'];

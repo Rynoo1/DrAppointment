@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['Rank'] = 1;
+$_SESSION['Rank'] = 2;
 //if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
 
 ?>
