@@ -1,5 +1,6 @@
 <?php
     include 'db.php';
+    ini_set('display_errors', 1);
 
     $PatientID = $_POST['PatientID'];
     $Image = $_POST['Image'];
@@ -9,12 +10,12 @@
     $Phone = $_POST['Phone']; 
     $Email = $_POST['Email'];
 
-    $sql = "UPDATE Patients SET Name = '$Name', Surname = '$Surname', Age = '$Age', Phone = '$Phone', Email = '$Email',
+    $sql = "UPDATE Patients SET Name = '$Name', Surname = '$Surname', Age = '$Age', PhoneNr = '$Phone', Email = '$Email',
     Image = '$Image' WHERE PatientID = '$PatientID' ";
 
     $result = $conn->query($sql);
     $conn->close();
-    header("location: index.php"); 
+    header("location: patients.php"); 
 
 ?>
 

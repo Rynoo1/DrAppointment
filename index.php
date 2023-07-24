@@ -1,10 +1,7 @@
 <?php
 session_start();
-$_SESSION['Rank'] = 2;
-//if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
-
+if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -180,7 +177,7 @@ $_SESSION['Rank'] = 2;
 
 
             <?php
-            if ($_SESSION['Rank'] === 2) {
+            if ($_SESSION['Rank'] === '2') {
                 ?>
                 <div class="col-12 bg-dark text-center text-primary my-3 rounded">
                     <h3 class="mt-3">Edit Receptionists</h3>
@@ -204,7 +201,7 @@ $_SESSION['Rank'] = 2;
                 <div class="bg-light mt-1 rounded mb-3 pb-2">
                     <h3 class="text-center mt-3">Add a Receptionist</h3>
 
-                    <form class="row m-0" action="insertrecept.php" method="post">
+                    <form class="row m-0" action="insert.php" method="post">
 
                         <div class="row">
                             <div class="col-3 mx-auto mb-2">
@@ -280,8 +277,8 @@ $_SESSION['Rank'] = 2;
 </html>
 
 <?php
-// }else{
-//     header("Location: login.php");
-//     exit();
-// }
+}else{
+    header("Location: login.php");
+    exit();
+}
 ?>

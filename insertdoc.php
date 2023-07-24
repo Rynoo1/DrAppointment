@@ -1,5 +1,6 @@
 <?php
     include 'db.php';
+    ini_set('display_errors', 1);
 
     $DName = $_POST['newDName'];
     $DSurname = $_POST['newDSurname'];
@@ -12,8 +13,8 @@
     $RoomNr = $_POST['newRoomNr'];
     $Image = $_POST['newPic'];
 
-    $sql = "INSERT INTO Doctors (DName, DSurname, Age, Gender, PhoneNr, Email, Password, Specialisation, RoomNr, Image) VALUES ('$DName', '$DSurname', 
-    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$Specialisation', '$RoomNr', '$Image' )";
+    $sql = "INSERT INTO Doctors (DName, DSurname, Age, Gender, PhoneNr, Email, Password, Specialisation, RoomNr, Image) 
+    VALUES ('$DName', '$DSurname', '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$Specialisation', '$RoomNr', '$Image' )";
 
     $conn->query($sql);
 

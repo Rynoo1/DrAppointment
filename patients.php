@@ -1,5 +1,7 @@
 <?php
 session_start();
+if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -171,3 +173,10 @@ session_start();
 </body>
 
 </html>
+
+<?php
+}else{
+    header("Location: login.php");
+    exit();
+}
+?>

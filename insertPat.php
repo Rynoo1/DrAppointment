@@ -13,8 +13,8 @@
     $Image = $_POST['newImg'];
 
 
-    $sql = "INSERT INTO Patients (Name, Surname, Age, Gender, PhoneNr, Email, Password, MedicalAidNr, Image) VALUES ('$Name', '$Surname', 
-    '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$MedicAid', '$Image' )";
+    $sql = "INSERT INTO Patients (Name, Surname, Age, Gender, PhoneNr, Email, Password, MedicalAidNr, Image) 
+    VALUES ('$Name', '$Surname', '$Age', '$Gender', '$Phone', '$Email', '$Pass', '$MedicAid', '$Image' )";
 
     $conn->query($sql);
 

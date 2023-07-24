@@ -1,6 +1,7 @@
 <?php
     session_start();
     include 'db.php';
+    ini_set('display_errors', 1);
 
     if (isset($_POST['names']) && isset($_POST['mail']) && isset($_POST['pass'])) {
         function validate($data)
@@ -13,6 +14,8 @@
         $names = validate($_POST['names']);
         $mail = validate($_POST['mail']);
         $pass = validate($_POST['pass']);
+        $surname = '';
+        $firstname = '';
 
         if (empty($names)) {
             header("Location: login.php?error=Name is required");
@@ -41,8 +44,7 @@
                 $firstname = $firstname . $names[$y];
             }
 
-
-            $sql = "SELECT * FROM Receptionists WHERE Name = $firstname AND Surname = '$surname' AND Email = '$mail' AND Password = '$pass'";
+            $sql = "SELECT * FROM Receptionists WHERE Name = '$firstname' AND Surname = '$surname' AND Email = '$mail' AND Password = '$pass'";
 
             $results = $conn->query($sql);
 
@@ -51,7 +53,6 @@
                 if ($row['Name'] === $firstname && $row['Surname'] === $surname && $row['Email'] === $mail && $row['Password'] === $pass ) {
                     $_SESSION['Name'] = $row['Name'];
                     $_SESSION['Rank'] = $row['Rank'];
-                    echo $_SESSION['Rank'];
                     header("Location: index.php");
                     exit();
                 } else {

@@ -4,7 +4,7 @@
 
     include 'db.php';
 
-    $sql = "SELECT * FROM Appointments, Patients, Doctors WHERE Appointments.DoctorID = Doctors.DoctorID AND Appointments.PatientID = Patients.PatientID AND Appointments.AppointID = '3'";
+    $sql = "SELECT * FROM Appointments, Patients, Doctors WHERE Appointments.DoctorID = Doctors.DoctorID AND Appointments.PatientID = Patients.PatientID AND Appointments.AppointID = '7'";
 
     $result = $conn->query($sql);
 
