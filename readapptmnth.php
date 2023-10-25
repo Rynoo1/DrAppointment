@@ -39,8 +39,8 @@
                 echo "<td>" . $row["Name"] . " " . $row["Surname"] . "</td>";
                 echo "<td> Dr. " . $row["DSurname"] . "</td>";
 
-                echo '<td><a class="btn btn-primary" href="index.php?AppointID=' . $row['AppointID'] . '" role="button">Update</a></td>';
-                echo '<td><a class="btn btn-danger" href="delete.php?AppointID=' . $row['AppointID'] . '" role="button">Delete</a></td>';
+                echo '<td><a class="btn btn-primary" href="index.php?AppointID=' . $row['AppointID'] . '" role="button"> Update </a></td>';
+                echo '<td><a class="btn btn-danger" href="deleteappt.php?AppointID=' . $row['AppointID'] . '" role="button"> Delete </a></td>';
             }
         }
 

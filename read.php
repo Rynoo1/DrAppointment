@@ -11,9 +11,10 @@
 
         if ($row['ReceptID'] == $_GET['ReceptID']) {
 
-            echo '<form class="form-inline m-2" action="update.php" method="POST">';
+            echo '<form class="form-inline m-2" action="update.php" method="POST" >';
+            echo '<input type="hidden" name="CurrentImage" id="CurrentImage" value="' . $row['Image'] . '" />';
 
-            echo '<td><input type="file" class="form-control" name="Image" id="image" accept=".jpg, .jpeg, .png"></td>';
+            echo '<td><input type="file" class="form-control" name="Image" id="Image" accept=".jpg, .jpeg, .png"></td>';
             echo '<td><input type="text" class="form-control" id="Name" name="Name"  value="' . $row['Name'] . '"></td>';
             echo '<td><input type="text" class="form-control" id="Surname" name="Surname"  value="' . $row['Surname'] . '"></td>';
             echo '<td><input type="number" class="form-control" id="Rank" name="Rank"  value="' . $row['Rank'] . '"></td>';

@@ -12,6 +12,7 @@
         if ($row['DoctorID'] == $_GET['DoctorID']) {
 
             echo '<form class="form-inline m-2" action="updatedoc.php" method="POST">';
+            echo '<input type="hidden" name="CurrentImage" id="CurrentImage" value="' . $row['Image'] . '" />';
 
             echo '<td><input type="file" class="form-control" name="Image" id="image" accept=".jpg, .jpeg, .png"></td>';
             echo '<td><input type="text" class="form-control" name="Name" value="' . $row['DName'] . '"></td>';
