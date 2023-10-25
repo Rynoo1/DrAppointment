@@ -50,7 +50,7 @@ if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
                         <th>Image</th>
                         <th>Name</th>
                         <th>Surname</th>
-                        <th>Speci</th>
+                        <th>Spec</th>
                         <th>RoomNr</th>
                         <th>Phone</th>
                         <th>Email</th>

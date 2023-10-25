@@ -90,73 +90,75 @@ if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
                         <h2>Next Appointments</h2>
                     </div>
 
-                    <div class="col-6">
-                        <?php
-                        $second = $result->fetch_assoc();
-                        if ($second) {
-                            $newdate = date_create($second["Date"]);
-                            $newtime = date_create($second["Time"]);
-                            ?>
-                            <div class="card text-bg-dark mx-auto">
-                                <div class="card-header">
-                                    <h3>Next Appointment</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4>
-                                        <?= date_format($newdate, "D, d M Y") ?> at
-                                        <?= date_format($newtime, "H:i") ?>
-                                    </h4>
-                                    <h4>
-                                        <?= $second["Name"] ?>
-                                        <?= $second["Surname"] ?>
-                                    </h4>
-                                    <h4> Dr.
-                                        <?= $second["DName"] ?>
-                                        <?= $second["DSurname"] ?>
-                                    </h4>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-6">
                             <?php
-                        } else {
-                            echo '';
-                        }
-                        ?>
-                    </div>
-                    <!-- second appointment card -->
+                            $second = $result->fetch_assoc();
+                            if ($second) {
+                                $newdate = date_create($second["Date"]);
+                                $newtime = date_create($second["Time"]);
+                                ?>
+                                <div class="card text-bg-dark mx-auto">
+                                    <div class="card-header">
+                                        <h3>Next Appointment</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>
+                                            <?= date_format($newdate, "D, d M Y") ?> at
+                                            <?= date_format($newtime, "H:i") ?>
+                                        </h4>
+                                        <h4>
+                                            <?= $second["Name"] ?>
+                                            <?= $second["Surname"] ?>
+                                        </h4>
+                                        <h4> Dr.
+                                            <?= $second["DName"] ?>
+                                            <?= $second["DSurname"] ?>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <?php
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </div>
+                        <!-- second appointment card -->
 
-                    <div class="col-6">
-                        <?php
-                        $third = $result->fetch_assoc();
-                        if ($third) {
-                            $newdate = date_create($third["Date"]);
-                            $newtime = date_create($third["Time"]);
-                            ?>
-                            <div class="card text-bg-dark mx-auto">
-                                <div class="card-header">
-                                    <h3>Next Appointment</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h4>
-                                        <?= date_format($newdate, "D, d M Y") ?> at
-                                        <?= date_format($newtime, "H:i") ?>
-                                    </h4>
-                                    <h4>
-                                        <?= $third["Name"] ?>
-                                        <?= $third["Surname"] ?>
-                                    </h4>
-                                    <h4> Dr.
-                                        <?= $third["DName"] ?>
-                                        <?= $third["DSurname"] ?>
-                                    </h4>
-                                </div>
-                            </div>
+                        <div class="col-6">
                             <?php
-                        } else {
-                            echo '';
-                        }
-                        ?>
+                            $third = $result->fetch_assoc();
+                            if ($third) {
+                                $newdate = date_create($third["Date"]);
+                                $newtime = date_create($third["Time"]);
+                                ?>
+                                <div class="card text-bg-dark mx-auto">
+                                    <div class="card-header">
+                                        <h3>Next Appointment</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>
+                                            <?= date_format($newdate, "D, d M Y") ?> at
+                                            <?= date_format($newtime, "H:i") ?>
+                                        </h4>
+                                        <h4>
+                                            <?= $third["Name"] ?>
+                                            <?= $third["Surname"] ?>
+                                        </h4>
+                                        <h4> Dr.
+                                            <?= $third["DName"] ?>
+                                            <?= $third["DSurname"] ?>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <?php
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </div>
+                        <!-- third appontment card -->
                     </div>
-                    <!-- third appontment card -->
                 </div>
 
                 <div class="col-6 bg-subtle text-center">
