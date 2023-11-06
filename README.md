@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 ![GitHub repo size](https://img.shields.io/github/repo-size/Rynoo1/DrAppointment?color=lightblue)
 ![GitHub language count](https://img.shields.io/github/languages/count/Rynoo1/DrAppointment?color=lightblue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Rynoo1/DrAppointment?color=lightblue)
@@ -27,11 +19,9 @@
   <p align="center">
     Appointment management portal
     <br />
+    ·
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
 
@@ -54,11 +44,11 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#project-features">Project Features</a></li>
+    <li><a href="#development-process">Development Process</a></li>
+    <li><a href="#final-outcome">Final Outcome</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#author">Author</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -77,16 +67,12 @@ The Office Doctor is an appointment management portal for a doctor's office that
 
 
 ### Built With
+LAMP stack
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* LAMP - MySQL, PHP, Apache
+* [![Linux][Linux]][Linux-url]
+* [![Apache][Apache]][Apache-url]
+* [![MySQL][MySQL]][MySQL-url]
+* [![PHP][PHP]][PHP-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,11 +193,7 @@ Don't forget to give the project a star! Thanks again!
 - demo video
 - promo video
 
-## Conclusion Footer
-- Contribution
-- License
-- Author
-- Acknowledgements
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
@@ -271,3 +253,11 @@ LinkedIn - www.linkedin.com/in/rynodebeer01
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[MySQL]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
+[MySQL-url]: https://https://www.mysql.com/
+[PHP]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
+[PHP-url]: https://www.php.net/
+[Linux]: https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
+[Linux-url]: https://www.linux.org/
+[Apache]: https://img.shields.io/badge/-Apache-red?logo=apache
+[Apache-url]: https://httpd.apache.org/
