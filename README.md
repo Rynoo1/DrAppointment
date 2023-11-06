@@ -156,19 +156,31 @@ The Office Doctor allows the user, the receptionist, to create, update and delet
 <!-- ROADMAP -->
 ## Development Process
 
-ERD
+During the development of this portal, some of the problems and challenges I faced were:
+
+* CRUD Functionalities
+    - Due to some minor typos and an issue where the Auto Index feature was not turned on for certain tables, I was having trouble with getting the CRUD functionalities to work.
+    - I was able to fix the errors by using the following code to view the errors and fix what was wrong. 
+    ```ini_set('display_errors', 1);```
+
+* Access Control
+  - Limiting users to only be able to update or add receptionists if they were a head receptionists or to stop users from accessing pages through the URL without logging in was an issue.
+  - To solve this I used session storage to store the users rank and name to both check if they are logged in, if not they are redirected to the login page, and to display the receptionist adding form if they are a head receptionist.
+
+* Login verification was not working
+  - This turned out to be an issue with variables that were not set outside of the loop where they were assigned their values.
+
+* Logging out properly
+  - To ensure the user is logged out and not allowed in again after, the session storage is cleared when the user presses log out.
+
+<br/>
 
 The visual concept for the portal was a clean look with an aesthetic that matches the medical environment that this will be used in. To match this medical aesthetic, the primary colour for this design was blue, with white as the secondary.
 
-During the development of this portal, some of the problems and challenges I faced were:
--CRUD Functionalities
---Auto index on tables and minor typos causing issues
---ini_set('display_errors', 1);
--Access control
---using session storage
--Login verification not working
---variables not initialised outside of the loop where they were assigned values
--Login page clears session storage to log out properly
+<br/>
+
+**Entity Relationship Diagram (ERD):**
+![ERD](img/readme/DrApptERD.jpeg)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -208,28 +220,24 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
-## Contact
+## Author
 
 Ryno de Beer - 221361@virtualwindow.co.za
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+LinkedIn - www.linkedin.com/in/rynodebeer01
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
+* [ReadMe](https://github.com/othneildrew/Best-README-Template/tree/master)
+* [Badges](https://shields.io/)
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
