@@ -253,7 +253,7 @@ if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
                 <div class="bg-light mt-1 rounded mb-3 pb-2">
                     <h3 class="text-center mt-3">Add a Receptionist</h3>
 
-                    <form class="row m-0" action="insert.php" method="post">
+                    <form class="row m-0" action="insert.php" method="post" enctype="multipart/form-data">
 
                         <div class="row">
                             <div class="col-3 mx-auto mb-2">
