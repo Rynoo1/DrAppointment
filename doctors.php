@@ -57,6 +57,7 @@ if (isset($_SESSION['Name']) && isset($_SESSION['Rank'])) {
                         <th>ID</th>
                         <th></th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <?php

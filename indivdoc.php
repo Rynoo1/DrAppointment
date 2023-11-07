@@ -1,9 +1,9 @@
 <?php
 
 include 'db.php';
-$patID = $_GET['PatientID'];
+$docID = $_GET['DoctorID'];
 
-$sql = "SELECT * FROM Patients WHERE PatientID = $patID";
+$sql = "SELECT * FROM Doctors WHERE DoctorID = $docID";
 
 $result = $conn->query($sql);
 ?>
@@ -59,25 +59,29 @@ $result = $conn->query($sql);
             </div>
             <div class="col-8 text-light">
                 <div class="row">
-                    <h3 class="col-6 mt-2 text-light"> Full Name </h3>
-                    <h3 class="col-4 mt-2"> Age </h3>
-                    <h3 class="col-2 mt-2 text-center"> Gender </h3>
+                    <h3 class="col-4 mt-3 text-light"> Full Name </h3>
+                    <h3 class="col-3 mt-3"> Age </h3>
+                    <h3 class="col-3 mt-3 text-center"> Gender </h3>
+                    <h3 class="col-2 mt-3"> ID </h3>
 
-                    <h3 class="col-6 mb-4">
-                        <?= $res["Name"] ?>
-                        <?= $res["Surname"] ?>
+                    <h3 class="col-4 mb-3">
+                        <?= $res["DName"] ?>
+                        <?= $res["DSurname"] ?>
                     </h3>
-                    <h3 class="col-4 mb-4">
+                    <h3 class="col-3 mb-3">
                         <?= $res["Age"] ?>
                     </h3>
-                    <h3 class="col-2 mb-4 text-center">
+                    <h3 class="col-3 mb-3 text-center">
                         <?= $res["Gender"] ?>
+                    </h3>
+                    <h3 class="col-2 mb-3">
+                        <?= $res["DoctorID"] ?>
                     </h3>
 
                     <h3 class="col-3 mt-3"> Phone </h3>
                     <h3 class="col-4 mt-3"> Email </h3>
-                    <h3 class="col-4 mt-3"> MedicalAid </h3>
-                    <h3 class="col-1 mt-3"> ID </h3>
+                    <h3 class="col-3 mt-3"> Specialisation </h3>
+                    <h3 class="col-2 mt-3"> Room </h3>
 
                     <h3 class="col-3">
                         <?= $res["PhoneNr"] ?>
@@ -85,13 +89,12 @@ $result = $conn->query($sql);
                     <h3 class="col-4">
                         <?= $res["Email"] ?>
                     </h3>
-                    <h3 class="col-4">
-                        <?= $res["MedicalAidNr"] ?>
+                    <h3 class="col-3 ps-3">
+                        <?= $res["Specialisation"] ?>
                     </h3>
-                    <h3 class="col-1">
-                        <?= $res["PatientID"] ?>
+                    <h3 class="col-2 ps-4">
+                        <?= $res["RoomNr"] ?>
                     </h3>
-
                 </div>
             </div>
 

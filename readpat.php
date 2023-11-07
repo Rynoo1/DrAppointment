@@ -35,6 +35,7 @@
             echo "<td>" . $row['Email'] . "</td>";
             echo "<td>" . $row['PatientID'] . "</td>";
             echo '<td><a class="btn btn-primary" href="patients.php?PatientID=' . $row['PatientID'] . '" role="button">Update</a></td>';
+            echo '<td><a class="btn btn-primary" href="indiv.php?PatientID=' . $row['PatientID'] . '" role="button">View</a></td>';
         };
 
         echo '<td><a class="btn btn-danger" href="deletepat.php?PatientID=' . $row['PatientID'] . '" role="button">Delete</a></td>';
