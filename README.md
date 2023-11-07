@@ -73,6 +73,7 @@ LAMP stack
 * [![Apache][Apache]][Apache-url]
 * [![MySQL][MySQL]][MySQL-url]
 * [![PHP][PHP]][PHP-url]
+* [![Bootstrap.com][Bootstrap.com]][Bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,5 +260,5 @@ LinkedIn - www.linkedin.com/in/rynodebeer01
 [PHP-url]: https://www.php.net/
 [Linux]: https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
 [Linux-url]: https://www.linux.org/
-[Apache]: https://img.shields.io/badge/-Apache-red?logo=apache
+[Apache]: https://img.shields.io/badge/-Apache-red?style=for-the-badge&logo=apache&logoColor=white
 [Apache-url]: https://httpd.apache.org/
