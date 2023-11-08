@@ -121,20 +121,31 @@ $conn = mysqli_connect( "localhost", "your_db_username", "your_db_password", "yo
 
 The Office Doctor allows the user, the receptionist, to create, update and delete entries on the MySQL database which are read and displayed on the portal. This can only happen once the user's log in details have been checked and authenticated. Multiple user's can have access and log in to the portal, but there are only a few head receptionists that are able to edit the details of the receptionists and create new accounts for new receptionists. Once a user has logged in, they are able to see the appointments for the next month as well as the next three appointments on the home page. From here, the receptionist is able to navigate to the doctor or patient page where they can see all doctors and patients as well as update or delete their profiles or add a new one.
 
-* **View All Doctors**
-![alldoctors](img/readme/Screenshot%202023-11-06%20at%2012.53.55.png)
-
+* **Doctors**
+![Alt text](img/readme/Blue%20iMac%20Front-7.png)
+![Alt text](img/readme/Blue%20iMac%20Front-6.png)
+This page allows you to view all doctors as well as add, update or delete doctor profiles.
+![Alt text](img/readme/Blue%20iMac%20Front-5.png)
+You can also view the doctor's full profile on the individual doctor's page by clicking view.
 <br/>
 
-* **Add a Patient form**
-![addpatient](img/readme/Screenshot%202023-11-06%20at%2012.56.42.png)
-
+* **Patients**
+![Alt text](img/readme/Blue%20iMac%20Front-2.png)
+![Alt text](img/readme/Blue%20iMac%20Front-4.png)
+This page allows you to view all patients and also add, update or delete patient profiles. There is also an individual patient page to display the full profile.
 <br/>
 
-* **Make a new Appointment**
-![newappointment](img/readme/Screenshot%202023-11-06%20at%2013.02.18.png)
+* **Appointments**
+![Alt text](img/readme/Blue%20iMac%20Front.png)
+All appointments in the next month can be viewed, updated or deleted on the home page. Next to this, the three next appointments are displayed by comparing the date to the current date.
+<br/>
+![Alt text](img/readme/Blue%20iMac%20Front-1.png)
+Adding a new appointment is as easy as fillig out the form below the calendar.
+<br/>
 
-
+* **Receptionists**
+![Alt text](img/readme/Blue%20iMac%20Front%20recep.png)
+All receptionist profiles are displayed, however, only head receptionists, with rank 2, can add, edit, update or delete profiles. The head receptionist view in this mockup also shows the add a receptionist form below the table, this is only visible if the user is a head receptionist.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -218,7 +229,6 @@ LinkedIn - www.linkedin.com/in/rynodebeer01
 
 * [ReadMe](https://github.com/othneildrew/Best-README-Template/tree/master)
 * [Badges](https://shields.io/)
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
