@@ -125,8 +125,10 @@ The Office Doctor allows the user, the receptionist, to create, update and delet
 ![Alt text](img/readme/Blue%20iMac%20Front-7.png)
 ![Alt text](img/readme/Blue%20iMac%20Front-6.png)
 This page allows you to view all doctors as well as add, update or delete doctor profiles.
+<br></br>
 ![Alt text](img/readme/Blue%20iMac%20Front-5.png)
 You can also view the doctor's full profile on the individual doctor's page by clicking view.
+
 <br/>
 
 * **Patients**
@@ -138,7 +140,7 @@ This page allows you to view all patients and also add, update or delete patient
 * **Appointments**
 ![Alt text](img/readme/Blue%20iMac%20Front.png)
 All appointments in the next month can be viewed, updated or deleted on the home page. Next to this, the three next appointments are displayed by comparing the date to the current date.
-<br/>
+<br></br>
 ![Alt text](img/readme/Blue%20iMac%20Front-1.png)
 Adding a new appointment is as easy as fillig out the form below the calendar.
 <br/>
@@ -151,7 +153,7 @@ All receptionist profiles are displayed, however, only head receptionists, with 
 
 
 
-<!-- ROADMAP -->
+<!-- Development Process -->
 ## Development Process
 
 During the development of this portal, some of the problems and challenges I faced were:
