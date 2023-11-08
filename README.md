@@ -20,7 +20,7 @@
     Appointment management portal
     <br />
     ·
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://drive.google.com/file/d/1NnhyYXarW8MHy5xXpqOlSrWBrFgIw2OF/view?usp=sharing">View Demo</a>
     ·
   </p>
 </div>
@@ -202,8 +202,7 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ## Final Outcome
-- demo video
-- promo video
+* [Demo Video](https://drive.google.com/file/d/1NnhyYXarW8MHy5xXpqOlSrWBrFgIw2OF/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
